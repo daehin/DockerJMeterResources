@@ -12,7 +12,7 @@ services:
       - /etc/filesrv.rob86.net.key.pem:/etc/ssl/key.pem:ro
 
   influxdb:
-    build: influxdb:lastest
+    build: influxdb
     env_file: configuration.env
     ports:
       - '8086:8086'
